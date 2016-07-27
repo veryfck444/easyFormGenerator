@@ -59,7 +59,7 @@ function edaDragdropWayEasyFormGen(
 					edaEasyFormGeneratorModel : _easyFormGeneratorModel
 				});
 				//back to false, waiting next save event
-				scope.returnSaveEvent = false;
+				scope.vm.returnSaveEvent = false;
 			}            
 		});	
 
