@@ -43,7 +43,7 @@ function edaDragdropWayEasyFormGen(
 		scope.$watch(()=>scope.edaEasyFormGeneratorModel, ()=>loadExistingConfigurationModel(), true);
 
 		// watch "scope.returnSaveEvent"" = catch saving form event  
-		scope.$watch(()=>scope.returnSaveEvent, (newValue)=>{
+		scope.$watch(()=>scope.vm.returnSaveEvent, (newValue)=>{
 			if (newValue === true) {
 				let _easyFormGeneratorModel = {
 					formName          				: scope.vm.configuration.formName,
